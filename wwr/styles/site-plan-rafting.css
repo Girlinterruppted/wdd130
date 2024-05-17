@@ -8,18 +8,18 @@ body {
 }
 
 :root {
-  --primary-color: #0C3E69;
-  --secondary-color: #006494;
-  --accent1-color: #E58C20;
-  --accent2-color: #4AB6F5;
+  --primary-color: #f09f3d;
+  --secondary-color:#1671c0;
+  --accent1-color:  #add2f1;
+  --accent2-color: #006494;
 
   --heading-font: 'Bebas Neue', serif;
   
   --paragraph-font: 'Noto Sans', serif;
 
-  --nav-background-color: #F3FAFA;
-  --nav-link-color: #E58C20;
-  --nav-hover-link-color: #006494;
+  --nav-background-color: #68a7cc;
+  --nav-link-color: #006494;
+  --nav-hover-link-color: #E58C20;
   --nav-hover-background-color: #F3FAFA;
 }
         
