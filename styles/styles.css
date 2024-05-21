@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+}
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -13,7 +17,8 @@ nav a {
     padding: 20px;
 }
 h1 {
-    color: steelblue;
+  margin: 1rem;
+  color: steelblue;
 }
   
 main img {
@@ -25,7 +30,8 @@ main img {
 }
   
 p {
-    padding: 0;
+  margin: 1rem;
+  padding: 0;
 }
 
 
@@ -42,8 +48,8 @@ aside img {
 
 aside h2 {
   position: absolute;
-  top: 45px;
-  left: 115px;
+  top: 35px;
+  left: 105px;
 
 }
 
@@ -70,4 +76,7 @@ main {
   padding: 1rem;
   background-color: #97e7f0;
   color: #080808;
+}
+.indent {
+  padding: 2rem;
 }
