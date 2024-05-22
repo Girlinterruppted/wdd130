@@ -62,21 +62,7 @@ body {
     height: auto;
 }
 
-footer p {
-    margin: 0rem; /* Remove margin-bottom */
-}
-
-footer .sociallinks {
-    display: flex;
-    position: bottom;
-    left: 20px;
-}
-
-footer .sociallinks a {
+footer a {
     text-decoration: none; /* Ensure no underlines for social media links */
 }
 
-footer .sociallinks img {
-    width: 20px;
-    height: auto;
-}
