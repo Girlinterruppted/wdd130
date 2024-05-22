@@ -69,7 +69,6 @@ footer p {
 footer .sociallinks {
     display: flex;
     position: bottom;
-    bottom: 0px;
     left: 20px;
 }
 
