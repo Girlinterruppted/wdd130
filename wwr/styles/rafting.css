@@ -1,144 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* Root variables */
 :root {
     --primary-color: #f09f3d;
     --secondary-color: #1671c0;
     --accent1-color: #add2f1;
     --accent2-color: #006494;
   
-    --heading-font: 'Bebas Neue', sans-serif;
-    --paragraph-font: 'Noto Sans', sans-serif;
-
     --nav-background-color: #68a7cc;
     --nav-link-color: #006494;
     --nav-hover-link-color: #e58c20;
     --nav-hover-background-color: #e7f5f5;
+    --font-family: 'Bebas Neue', sans-serif;
 }
 
-/* Body */
+/* General styling */
 body {
-    font-family: var(--paragraph-font);
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff; /* Example background color for body */
-}
-
-/* Header */
-header {
-    background-color: var(--nav-background-color);
-    padding: 10px 0;
-}
-
-.header-container {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Logo takes auto width, rest takes remaining space */
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.header-container img {
-    max-height: 50px; /* Adjust logo height as needed */
-}
-
-.header-container h1 {
     margin: 0;
-    color: #fff; /* Example text color for header */
-    font-size: 1.5rem; /* Example font size for header */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--nav-background-color);
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+header img {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    margin: 1rem;
 }
 
 nav {
+    text-align: right;
+}
+
+.navigation {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    list-style: none;
+    padding: 0;
 }
 
-nav a {
-    color: #fff; /* Example text color for navigation links */
+.navigation li {
+    margin-right: 1rem;
+}
+
+.navigation a {
+    color: #fff;
     text-decoration: none;
-    padding: 0 10px;
-    font-size: 1rem; /* Example font size for navigation links */
+    padding: 0.5rem 1rem;
 }
 
-nav a:hover {
+.navigation a:hover {
+    background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
+    border-radius: 5px;
 }
 
-/* Section: History */
+/* Hero section styling */
+.hero {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 3rem;
+    padding: 0.5rem 1rem;
+}
+
+.hero article {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem;
+}
+
+.hero article img {
+    width: 150px;
+    height: auto;
+    float: right;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+
+/* History section styling */
 #history {
-    padding: 20px;
-    background-color: #f9f9f9; /* Example background color for section */
-    margin-bottom: 20px;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#history .history-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+#history .history-content img {
+    max-width: 400px;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #history h2 {
     color: var(--primary-color);
-    font-size: 2rem; /* Example font size for section headings */
+    font-size: 2rem;
 }
 
 #history p {
-    color: #333; /* Example text color for paragraphs */
     line-height: 1.6;
+    text-align: left;
 }
 
-/* Section: Adventures */
+/* Adventures section styling */
 #adventures {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f0f0f0; /* Example background color for section */
+    padding: 2rem;
+    background-color: #fff;
 }
 
 #adventures h2 {
     color: var(--primary-color);
-    font-size: 2rem; /* Example font size for section headings */
+    font-size: 2rem;
 }
 
-#adventures figure {
-    flex-basis: calc(20% - 10px); /* Adjust figure width for responsiveness */
-    margin-bottom: 20px;
+.adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.adventures-grid figure {
+    margin: 0;
     text-align: center;
 }
 
-#adventures img {
+.adventures-grid img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Example border radius for images */
+    border-radius: 5px;
 }
 
-#adventures figcaption {
-    margin-top: 10px;
+.adventures-grid figcaption {
+    margin-top: 0.5rem;
     font-style: italic;
 }
 
-/* Footer */
+/* Footer styling */
 footer {
     background-color: var(--nav-background-color);
-    padding: 10px 20px;
-    text-align: right;
-}
-
-footer p {
-    color: #fff; /* Example text color for footer */
-    font-size: 0.8rem; /* Example font size for footer */
-    margin: 0;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
 }
 
 .sociallinks {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
 }
 
 .sociallinks a {
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .sociallinks img {
-    width: 30px; /* Adjust social media icon size */
-    height: 30px; /* Adjust social media icon size */
-    border-radius: 50%; /* Example border radius for social media icons */
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
 }
