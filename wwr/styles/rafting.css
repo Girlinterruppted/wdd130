@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --primary-color: #f09f3d;
@@ -6,63 +6,139 @@
     --accent1-color: #add2f1;
     --accent2-color: #006494;
   
+    --heading-font: 'Bebas Neue', sans-serif;
+    --paragraph-font: 'Noto Sans', sans-serif;
+
     --nav-background-color: #68a7cc;
     --nav-link-color: #006494;
     --nav-hover-link-color: #e58c20;
     --nav-hover-background-color: #e7f5f5;
-    --font-family: 'Bebas Neue', sans-serif;
 }
 
-/* Heading and paragraph styling */
-h1, h2, h3, p {
-    color: var(--primary-color);
-    font-family: var(--font-family);
-}
-
-/* Limit entire page width */
+/* Body */
 body {
+    font-family: var(--paragraph-font);
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Example background color for body */
 }
 
-
-.hero {
-    position: relative;
+/* Header */
+header {
+    background-color: var(--nav-background-color);
+    padding: 10px 0;
 }
 
-.hero img {
-    display: block;
+.header-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo takes auto width, rest takes remaining space */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-container img {
+    max-height: 50px; /* Adjust logo height as needed */
+}
+
+.header-container h1 {
+    margin: 0;
+    color: #fff; /* Example text color for header */
+    font-size: 1.5rem; /* Example font size for header */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    color: #fff; /* Example text color for navigation links */
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 1rem; /* Example font size for navigation links */
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+/* Section: History */
+#history {
+    padding: 20px;
+    background-color: #f9f9f9; /* Example background color for section */
+    margin-bottom: 20px;
+}
+
+#history h2 {
+    color: var(--primary-color);
+    font-size: 2rem; /* Example font size for section headings */
+}
+
+#history p {
+    color: #333; /* Example text color for paragraphs */
+    line-height: 1.6;
+}
+
+/* Section: Adventures */
+#adventures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0; /* Example background color for section */
+}
+
+#adventures h2 {
+    color: var(--primary-color);
+    font-size: 2rem; /* Example font size for section headings */
+}
+
+#adventures figure {
+    flex-basis: calc(20% - 10px); /* Adjust figure width for responsiveness */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#adventures img {
     width: 100%;
     height: auto;
+    border-radius: 8px; /* Example border radius for images */
 }
 
-.hero h1 {
-    position: absolute;
-    top: 10%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    color: #f6f3f3;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 4rem;
+#adventures figcaption {
+    margin-top: 10px;
+    font-style: italic;
 }
 
-.hero article {
-    position: absolute;
-    top: 20%;
-    right: 30%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    color: #fff;
+/* Footer */
+footer {
+    background-color: var(--nav-background-color);
+    padding: 10px 20px;
+    text-align: right;
 }
 
-.hero article img {
-    float: right;
+footer p {
+    color: #fff; /* Example text color for footer */
+    font-size: 0.8rem; /* Example font size for footer */
+    margin: 0;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sociallinks a {
     margin-left: 10px;
-    width: 150px;
-    height: auto;
 }
 
-footer a {
-    text-decoration: none; /* Ensure no underlines for social media links */
+.sociallinks img {
+    width: 30px; /* Adjust social media icon size */
+    height: 30px; /* Adjust social media icon size */
+    border-radius: 50%; /* Example border radius for social media icons */
 }
-
