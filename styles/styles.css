@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   background-color: #f4f4f4;
-  color: #333;
+  color: #333; /* Main text color */
 }
 
 /* Header, Footer, and Grid Container */
@@ -19,21 +19,22 @@ header, .grid, footer {
 
 /* Navigation Styling */
 nav {
-  background-color: steelblue;
+  background-color: #3f3f3f;
   padding: 1rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-nav a { 
+nav a {
   display: block;
   padding: 0.5rem;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff;
-}
+  color: #fff; /* White text on steelblue background */
+} 
+
 
 nav a:hover {
   text-decoration: underline;
@@ -77,7 +78,7 @@ ul.box li {
 }
 
 ul.box a {
-  color: #007BFF;
+  color: #00438F; /* Blue links */
   text-decoration: none;
 }
 
@@ -115,8 +116,8 @@ footer {
   border-top: 1px solid #000;
   text-align: center;
   padding: 1rem 0;
-  background-color: #333;
-  color: #fff;
+  background-color: #3f3f3f;
+  color: #fff; /* White text on dark background */
 }
 
 /* Box Class Styling */
@@ -124,8 +125,8 @@ footer {
   margin: 1rem;
   border: 1px solid rgba(0, 0, 0, .1);
   padding: 1rem;
-  background-color: #7ecbf1;
-  color: #080808;
+  background-color: #7ecbf1; /* Light blue background */
+  color: #080808; /* Dark text on light blue background */
 }
 
 /* Indent Class Styling */
