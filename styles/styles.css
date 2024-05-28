@@ -116,7 +116,7 @@ footer {
   border-top: 1px solid #000;
   text-align: center;
   padding: 1rem 0;
-  background-color: #3f3f3f;
+  background-color: #3f3f3f; /*Same as the nav bar background color */
   color: #fff; /* White text on dark background */
 }
 
