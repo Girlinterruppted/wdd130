@@ -192,134 +192,152 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
-    position: relative; 
+    position: relative;
 }
 
-.social-media-icons {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+.sociallinks {
     display: flex;
+    justify-content: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
-.social-media-icons a img {
+.sociallinks a img {
     width: 24px;
     height: 24px;
     filter: invert(100%);
 }
 
-/* Contact Information Section */
+/* Contact Info Section */
 #contact-info {
-    background-color: #fff;
     padding: 2rem;
-    text-align: center;
+    background-color: #fff;
 }
 
 #contact-info h2 {
     color: var(--primary-color);
     font-size: 2rem;
-    margin-bottom: 1rem;
+    text-align: center;
 }
 
 #contact-info p {
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-#contact-info iframe {
+iframe {
     width: 100%;
-    height: 400px;
+    height: 300px;
     border: none;
     margin-top: 1rem;
+    border-radius: 5px;
 }
 
 /* Team Section */
 #team {
-    background-color: #f9f9f9;
     padding: 2rem;
-    text-align: center;
+    background-color: #f9f9f9;
 }
 
 #team h2 {
     color: var(--primary-color);
     font-size: 2rem;
-    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .team-member {
-    display: inline-block;
-    margin: 1rem;
     text-align: center;
+    margin-top: 1rem;
 }
 
 .team-member img {
     width: 150px;
-    height: 150px;
+    height: auto;
     border-radius: 50%;
-    border: 2px solid var(--primary-color);
-}
-
-.team-member p {
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 /* Contact Form Section */
 #contact-form {
-    background-color: #fff;
     padding: 2rem;
-    text-align: center;
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #contact-form h2 {
     color: var(--primary-color);
     font-size: 2rem;
+    text-align: center;
     margin-bottom: 1rem;
 }
 
 #contact-form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    gap: 1rem;
 }
 
 #contact-form label {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+    font-weight: bold;
 }
 
 #contact-form input,
 #contact-form textarea {
     width: 100%;
-    max-width: 600px;
     padding: 0.5rem;
-    margin: 0.5rem 0;
+    font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 #contact-form button {
     background-color: var(--primary-color);
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 #contact-form button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
 }
 
-#contact-form input[type="checkbox"] {
-    width: auto;
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    header img {
+        margin-bottom: 1rem;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
 }
 
-#contact-form input[type="radio"] {
-    width: auto;
+@media (max-width: 600px) {
+    #contact-form {
+        padding: 1rem;
+    }
+
+    #contact-form button {
+        padding: 0.5rem 1rem;
+    }
 }
