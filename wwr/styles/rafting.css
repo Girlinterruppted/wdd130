@@ -7,7 +7,7 @@
     --accent1-color: #add2f1;
     --accent2-color: #006494;
   
-    --nav-background-color: #68a7cc;
+    --nav-background-color: #333;
     --nav-link-color: #006494;
     --nav-hover-link-color: #e58c20;
     --nav-hover-background-color: #e7f5f5;
@@ -17,8 +17,8 @@
 /* General styling */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
@@ -43,6 +43,15 @@ header h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
     margin: 1rem;
+}
+
+main {
+    padding: 20px;
+}
+
+main p {
+    color: #333;
+    background-color: #fff; 
 }
 
 nav {
@@ -181,21 +190,22 @@ nav {
 footer {
     background-color: var(--nav-background-color);
     color: #fff;
-    padding: 1rem;
+    padding: 10px;
     text-align: center;
+    position: relative; 
 }
 
-.sociallinks {
+.social-media-icons {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
-    justify-content: center;
+    gap: 10px;
 }
 
-.sociallinks a {
-    margin: 0 10px;
-}
-
-.sociallinks img {
-    width: 40px;
-    height: auto;
-    border-radius: 50%;
+.social-media-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
 }
