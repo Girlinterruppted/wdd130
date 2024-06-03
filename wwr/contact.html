@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rafting Plan</title>
+    <meta name="description" content="Contact us for more information about our rafting adventures, reservations, and more.">
+    <meta name="author" content="Sajjal Zia">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+<header>
+    <img src="images/logo.jpeg" alt="Rafting Site Company Logo">
+    <h1>Rafting Plan</h1>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="contact-info">
+        <h2>Contact Information</h2>
+        <p>Address: 123 Adventure Lane, Rafting Town, CO 12345</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@raftingplan.com</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.087450807312!2d-122.08424928468122!3d37.42199997982515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba6a8c98b2d9%3A0xdeb24556eb1d3b92!2sGoogleplex!5e0!3m2!1sen!2sus!4v1624487928288!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="images/employee1.jpg" alt="Employee 1">
+            <p>Jane Doe - Adventure Guide</p>
+        </div>
+        <div class="team-member">
+            <img src="images/employee2.jpg" alt="Employee 2">
+            <p>John Smith - Safety Coordinator</p>
+        </div>
+        <div class="team-member">
+            <img src="images/employee3.jpg" alt="Employee 3">
+            <p>Alice Johnson - Customer Service</p>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_contact_form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <p>Purpose of Message:</p>
+            <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry">
+            <label for="general-inquiry">General Inquiry</label><br>
+            <input type="radio" id="reservation-question" name="purpose" value="Reservation Question">
+            <label for="reservation-question">Reservation Question</label><br>
+            <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
+            <label for="website-suggestion">Website Suggestion</label><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+<footer class="footer social">
+    <p>©2024 🌊Rafting Site Plan 👩 Sajjal Zia</p>
+    <nav class="sociallinks">
+        <a href="https://facebook.com">
+            <img src="images/facebook.jpg" alt="Facebook">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/twitter.jpg" alt="Twitter">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram.jpg" alt="Instagram">
+        </a>
+    </nav>
+</footer>
+</body>
+</html>
