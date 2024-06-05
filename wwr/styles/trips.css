@@ -1,0 +1,106 @@
+/* General styling */
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.cta .button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta .button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Trip Details Section */
+.trip-details {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.trip {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.trip img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 2rem;
+    border-radius: 5px;
+}
+
+.trip-info {
+    flex: 1;
+}
+
+.trip-info h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.trip-info p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Trip Table Section */
+.trip-table {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.trip-table th, .trip-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.trip-table th {
+    background-color: var(--accent2-color);
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: var(--nav-background-color);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
